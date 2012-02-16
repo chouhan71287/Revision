@@ -17,42 +17,31 @@ for i in 0..1
 puts "size of array is #{names.length}"
 
 # array & other array
-first=Array[3,5,40,7,9,11,3,4]   #create first array
-second=Array[3,4,5,6,7,8,9,10,4] #create second array
+first=Array[1,2,3,4,5]   #create first array
+second=Array[1,2,3,4,5,6] #create second array
 third=Array.new #create third array
 
-third=first & second
-for i in 0...third.length 
-puts"Third array #{i} value #{third[i]}"
-end
+# array+array
 
-# array * int [or] array * str
-cloneFirst=Array.new
-cloneFirst=first*4
+third=first+second
 i=0
-while i < cloneFirst.length
- puts "Clone Arrays element #{i} is #{cloneFirst[i]} "
- i+=1
- end 
+while i<third.length
+   puts" value of third array are #{third[i]}"
+   i+=1
+end 
 
-puts "hello"
-# array *str
-
-cloneFirst1=Array.new
-cloneFirst1=second.join(",")
+#append object
+third << "add" << "del" << first
 i=0
-while i < cloneFirst1.length
- printf "#{cloneFirst1[i]} "
- i+=1
- end 
- 
- i=0
-while i < second.length
- printf "#{second[i]} "
- i+=1
- end 
+while i<third.length
+   puts" value of fourth array are #{third[i]}"
+   i+=1
+end 
+puts "The value of last index is #{third[third.length-1]}"
 
+#<=> (comparision of two array)
 
+puts "the comparision value is #{first<=>second}"
 
 
 
