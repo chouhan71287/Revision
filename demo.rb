@@ -26,6 +26,32 @@ for i in 0...third.length
 puts"Third array #{i} value #{third[i]}"
 end
 
+# array * int [or] array * str
+cloneFirst=Array.new
+cloneFirst=first*4
+i=0
+while i < cloneFirst.length
+ puts "Clone Arrays element #{i} is #{cloneFirst[i]} "
+ i+=1
+ end 
+
+puts "hello"
+# array *str
+
+cloneFirst1=Array.new
+cloneFirst1=second.join(",")
+i=0
+while i < cloneFirst1.length
+ printf "#{cloneFirst1[i]} "
+ i+=1
+ end 
+ 
+ i=0
+while i < second.length
+ printf "#{second[i]} "
+ i+=1
+ end 
+
 
 
 
