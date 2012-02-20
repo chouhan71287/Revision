@@ -1,11 +1,11 @@
-#count: 
+#cycle: 
 class ArrayPro
 
  def arrayFun
  first=Array[5,7,8,6,9,6]
  second=Array["a","b","c"]
- puts "array is #{first.count}"
-  puts "array is #{first.count(6)}"
+ first.cycle(2){|x| puts x}
+  
    
 
 
