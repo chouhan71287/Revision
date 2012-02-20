@@ -1,11 +1,11 @@
-#empty: 
+#eql?: 
 class ArrayPro
 
  def arrayFun
  first=Array[5,7,8,6,9,6]
  second=Array["a","b","c","d","c"]
   
- puts first.empty?
+ puts first.eql?(first)
  puts [].empty?
   
    
