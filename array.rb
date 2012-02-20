@@ -1,11 +1,11 @@
-#delete: 
+#delete_at(index): 
 class ArrayPro
 
  def arrayFun
  first=Array[5,7,8,6,9,6]
- second=Array["a","b","c"]
- puts "#{first.delete(6)}"
- puts "#{first}"
+ second=Array["a","b","c","d","c"]
+ puts "#{second.delete_at(2)}"
+ puts "#{second}"
   
    
 
