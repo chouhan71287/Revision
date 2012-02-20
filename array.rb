@@ -1,11 +1,13 @@
-#concat: 
+#count: 
 class ArrayPro
 
  def arrayFun
- first=Array["l","m","n","O"]
+ first=Array[5,7,8,6,9,6]
  second=Array["a","b","c"]
- puts "array is #{first.concat(second)}"
- puts "array size is  #{(first.concat(second)).size}"
+ puts "array is #{first.count}"
+  puts "array is #{first.count(6)}"
+   
+
 
  end
  end
