@@ -1,8 +1,9 @@
+#compact: to remove nil from array
 class ArrayPro
 
  def arrayFun
- first=Array[10,15,20,25,30]
- puts "array is #{first.combination(6).to_a}"
+ first=Array[10,15,20,nil,25,30,nil,22]
+ puts "array is #{first.compact}"
  end
  end
  ob1=ArrayPro.new
