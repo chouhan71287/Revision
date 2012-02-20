@@ -1,11 +1,12 @@
-#compact!: to remove nil from array return nil when no changes
+#concat: 
 class ArrayPro
 
  def arrayFun
- first=Array[10,15,20,nil,25,30,nil,22]
+ first=Array["l","m","n","O"]
  second=Array["a","b","c"]
- puts "array is #{first.compact!}"
- puts "second array is #{second.compact!}"
+ puts "array is #{first.concat(second)}"
+ puts "array size is  #{(first.concat(second)).size}"
+
  end
  end
  ob1=ArrayPro.new
