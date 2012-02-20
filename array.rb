@@ -2,10 +2,11 @@
 class ArrayPro
 
  def arrayFun
- f=Array[5,7,8,6,29,16]
- s=Array["a","b","c","d","c"]
- puts "first element #{f.first}"
-puts "first element #{f.first(17)}"
+ f=Array[3,4,5,6,7]
+ s=Array["a","b","c","d","e"]
+ puts s.replace(["l","m"])
+ 
+
 
   
    
