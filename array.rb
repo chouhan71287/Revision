@@ -1,14 +1,18 @@
-#fetch: 
+#fill: 
 class ArrayPro
 
  def arrayFun
- first=Array[5,7,8,6,29,16]
- second=Array["a","b","c","d","c"]
- print first
- puts first.fetch(1)
- puts first.fetch(5)
- puts first.fetch(5,"vijay")
- puts first.fetch(4){|x| x*x}
+ f=Array[5,7,8,6,29,16]
+ s=Array["a","b","c","d","c"]
+ print("#{s}")
+ printf('first')
+ print s.fill("1")
+ print('second')
+ puts s.fill("#",2,2)
+ puts 'third'
+ puts s.fill("&",0..2)
+ puts'fourth'
+
 
   
    
