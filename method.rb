@@ -11,6 +11,10 @@ def result(*test)
 puts "=================RESULT=================================="
  puts "Number of Subjects are #{test.length}"
  puts "Calculating result"
+ puts test.inspect
+ puts test.to_s # with to_s method
+ a=test.inspect #  with inspect method
+ puts a
  for i in 0...test.length
 @total=@total + test[i]
 end
