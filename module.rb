@@ -1,30 +1,19 @@
-module A
- def first
- puts "My name is first name"
- end
-end 
- module B
- def second
- puts "My name is second name"
- end
- end
- 
- module C
- def third
- puts "My name is third name"
- end
- end
- 
- class Sample
- include A
- include B
- include C
- def first
- puts "My name is first class name"
- end
- end
- ob1=Sample.new
- ob1.first
- ob1.second
- ob1.third 
- 
+require 'trig'
+require 'moral'
+require 'test.rb'
+class A
+include Test
+include Trig
+
+
+def initialize()
+y=Trig.div(20)
+puts "value is #{y}"
+z=Moral.city("Indore")
+puts "city = #{z}"
+puts "#{Trig::SUM}"
+
+end
+end
+ob1=A.new
+puts ob1.hello
