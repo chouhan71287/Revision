@@ -17,31 +17,40 @@ for i in 0..1
 puts "size of array is #{names.length}"
 
 # array & other array
-first=Array[1,2,3,4,5]   #create first array
+first=Array[7,5,0,4,5]   #create first array
 second=Array[1,2,3,4,5,6] #create second array
 third=Array.new #create third array
+third[0]="a"
+third[1]="b"
+third[2]="c"
+third[3]="d"
+third[4]="e"
 
-# array+array
+puts "value at different location #{first[3]+first[2]+first[4]}"
+puts "#{third[0]+third[1]}"
 
-third=first+second
-i=0
-while i<third.length
-   puts" value of third array are #{third[i]}"
-   i+=1
-end 
+puts "#{third[-4,3]}"
+#create new array of string
+#assoc(obj)
+as=Array.new
+as=["red","green","blue","white","yellow"]
+as1=Array.new
+as1=["ind","pak","srl","chine"]
+as2=Array.new
+as2=["a","b","c","d"]
+a=Array.new
+a=[as,as1,as2]
 
-#append object
-third << "add" << "del" << first
-i=0
-while i<third.length
-   puts" value of fourth array are #{third[i]}"
-   i+=1
-end 
-puts "The value of last index is #{third[third.length-1]}"
+puts"Result=> #{a.assoc("a")}"
 
-#<=> (comparision of two array)
+#at
 
-puts "the comparision value is #{first<=>second}"
+puts "#{a.at(1)}"
+puts "#{a[-1].length}"
+puts "#clear fun =	>#{first.clear}"
+
+
+
 
 
 
