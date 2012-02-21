@@ -1,8 +1,8 @@
 class Method_Test
 
-def test_value(var1, var2)
+def test_value(var1="default_value", var2="Default_value 2", var3="Default_value3")
   
-  puts "value of variables are #{var1} and #{var2}"
+  puts "value of variables are #{var1}, #{var2} and #{var3}"
   end
 end
 
